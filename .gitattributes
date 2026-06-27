@@ -1,0 +1,6 @@
+* text=auto
+
+/.gitattributes export-ignore
+/CHANGELOG.md export-ignore
+/COPYING export-ignore
+/README.md export-ignore
