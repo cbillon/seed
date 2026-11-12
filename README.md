@@ -1,5 +1,7 @@
 # The Seed to grow a new Moodle site
 
+ docker run --rm -i --tty -v $PWD:/app composer create-project cbillon/seed my_site_name --ignore-platform-reqs
+
 This package is intended as a seed to start a new Moodle site using Composer.
 
 ## Features

@@ -1,23 +1,28 @@
-{
+
   "name": "cbillon/seed",
   "description": "A Composer project template to seed a new Moodle Site",
   "type": "project",
-  "require": {
-    "moodle/composer-installer": "*",
-    "moodle/moodle-composer-scaffold": "*",
-    "moodle/moodle": "^5.1"
-  },
   "repositories": [
     {
-      "name": "Moodle Package Repository",
-      "type": "composer",
-      "url": "https://moodle.org"
+      "name": "cbillon/composer-installer",
+      "type": "vcs",
+      "url": "git@github.com:cbillon/composer-installer"
+    },
+    {
+      "name": "cbillon/moodle-composer-scaffold",
+      "type": "vcs",
+      "url": "git@github.com:cbillon/moodle-composer-scaffold"
     }
   ],
+  "require": {
+    "cbillon/composer-installer": "*",
+    "cbillon/moodle-composer-scaffold": "*",
+    "moodle/moodle": "^5.3"
+  },  
   "config": {
     "allow-plugins": {
-      "moodle/composer-installer": true,
-      "moodle/moodle-composer-scaffold": true
+      "cbillon/composer-installer": true,
+      "cbillon/moodle-composer-scaffold": true
     },
     "audit": {
       "block-insecure": false
